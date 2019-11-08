@@ -1,0 +1,517 @@
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+    padding-bottom: 51px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/images/background.webp);
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: repeat repeat !important;
+    background-position: center center;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.formSection {
+    background: rgba(0, 0, 0, 0.11);
+}
+
+.blueSection {
+    background: #2ACCE9;
+}
+
+hr {
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background: rgb(48, 160, 92);
+    font-size: 22px;
+    border-radius: 3px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.btn.orderID {
+    font-size: 19px;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+.btnShadow:hover {
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.2), 0 0 11px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.2), 0 0 11px rgba(0, 0, 0, 0.4);
+
+}
+
+.btnShadow {
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 300ms -webkit-box-shadow;
+    transition: 300ms -webkit-box-shadow;
+    transition: 300ms box-shadow;
+    transition: 300ms box-shadow, 300ms -webkit-box-shadow;
+}
+
+.bg-grey {
+    background-color: rgb(45, 45, 45);
+}
+
+
+label.form-check-label {
+    padding: 10px;
+    cursor: pointer;
+    color: #5f5d5d;
+    background: #c3c3c3;
+    font-size: 20px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    position: relative;
+}
+
+.rating .form-check-input {
+    display: none;
+}
+
+input[name="exp"]:checked ~ label.form-check-label,
+input[name="rebuy"]:checked ~ label.form-check-label {
+    border: #30a05c solid 4px;
+    background: #efefef;
+}
+
+label.form-check-label:hover {
+    background: #e8e8e8;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.progress {
+    height: 25px;
+}
+
+label.form-check-label img {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    right: 20px;
+}
+
+label.form-check-label span {
+    position: relative;
+    left: 20px;
+}
+
+.orangebtn {
+    background: #f6993f;
+}
+
+.notice-mob {
+    display: none;
+}
+
+.address {
+    background: rgba(0, 0, 0, 0.11);
+    width: 40%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.clipboardBTN {
+    font-size: small;
+    padding: 10px !important;
+}
+
+@media only screen and (max-width: 722px) {
+    .faq {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 522px) {
+    .col img {
+        width: 79vw;
+    }
+
+    .unset-size {
+        width: unset !important;
+    }
+
+    .home-header {
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    .notice-mob {
+        display: block;
+    }
+
+    a.navbar-brand img {
+        width: 100%;
+    }
+
+    .notice-desktop {
+        display: none;
+    }
+
+    .mobile-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .review {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .mobile-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 988px) and (min-width:767px) {
+    label.form-check-label img {
+        height: 15px;
+        width: auto;
+        position: absolute;
+        right: 10px;
+        top: 19px;
+    }
+}
+
+.text-info {
+    color: #1780B7 !important;
+}
+
+
+
+
+
+
+
+/* login form style */
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+#formContent {
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#formContent form {
+    padding: 20px;
+}
+
+
+/* TABS */
+
+h2.inactive {
+    color: #cccccc;
+}
+
+h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 20px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #39ace7;
+}
+
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+textarea {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus ,
+textarea {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder,
+input[type=password]:placeholder,
+input[type=number]:placeholder ,
+textarea {
+    color: #cccccc;
+}
+.text-align-left{
+    text-align: left!important;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+}
+
+.underlineHover:hover {
+    color: #0d0d0d;
+}
+
+.underlineHover:hover:after {
+    width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+}
+
+#icon {
+    width: 60%;
+}
+
+/* end login form style */
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+tr, th, td {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.mytable {
+    padding: 30px!important;
+    padding-top: 10px!important;
+    max-width: 800px!important;
+    overflow-x: scroll;
+}
+.mymaxwidth{
+    max-width: 800px!important;
+}
+td.Completed {
+    background: #04b704;
+    color: white;
+}
+td.Processing {
+    background: #ffc623;
+    color: white;
+
+}
